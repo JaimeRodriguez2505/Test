@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background: linear-gradient(to right, #d6483d 70%, #d6483d 70%);
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 0 3%;
+}
+
+.header .icono-menu {
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.header .icono-menu img {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.header .icono-menu img:hover {
+    transform: scale(1.2);
+}
+
+.header nav {
+    order: 1;
+}
+
+.header .nav-links li a:hover {
+    color: #ffbc0e;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-icon img {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.btn-icon:hover img {
+    transform: scale(1.2);
+}
+
+.btn {
+    order: 2;
+    padding-left: 16%;
+}
+
+.btn button {
+    margin-top: 9%;
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+}
+
+.autos {
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px;
+    flex: 1;
+}
+
+.logi {
+    color: #ffffff;
+    padding-top: 7%;
+    padding-right: 5%;
+    display: block;
+    margin-left: 15%;
+    max-width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: -5px 26px 35px 10px rgba(0, 0, 0, 0.597);
+}
+
+.logi h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.logi input[type="text"],
+.logi input[type="password"] {
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.logi label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.logi button {
+    text-align: center;
+    margin-top: 20% ;
+    margin-bottom: 10%;
+    font-weight: 700;
+    color: #000000;
+    padding: 6px 95px;
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.logi button:hover {
+    color: #ffffff;
+    background-color: #000000;
+    transform: scale(1.1);
+}
+
+span.start {
+    color: #ffffff;
+    font-size: 45.6px;
+    font-weight: bold;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+span.mid {
+    color: #ffffff;
+    font-size: 26.6px;
+    font-weight: bold;
+    padding-left: 14.5%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+span.end {
+    font-size: 85px;
+    font-weight: bold;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.cont-menu {
+    background-color: #2b70e4;
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s ease;
+}
+
+.cont-menu ul {
+    padding: 100px 0 20px 0;
+    list-style: none;
+}
+
+.cont-menu ul li a {
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.cont-menu ul li a:hover {
+    background-color: rgb(228, 228, 228);
+    color: rgb(42, 42, 42);
+}
+
+.active {
+    transform: translateX(600px);
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+}
+.mensajito {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .mensajito p{
+    color: #000000;
+  }
+  .mensajito ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mensajito ul li {
+    margin-bottom: 10px;
+  }
+
+  .mensajito .error {
+    color: red;
+    font-family: Helvetica, sans-serif; 
+  }
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estados del Estacionamiento</title>
+</head>
+<body>
+    <h1>{{ estacionamiento.lugar }}</h1>
+    <ul>
+    {% for estado in estados %}
+        <li>
+            Hora de ingreso: {{ estado.hora_ingreso }} <br>
+            Hora de salida: {{ estado.hora_salida }}
+        </li>
+    {% empty %}
+        <li>No hay estados disponibles para este estacionamiento.</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

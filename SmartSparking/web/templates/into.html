@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTO</title>
+    <link rel="stylesheet" href="{% static '/css/index-into.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' %}"
+    />
+  </head>
+
+  <body>
+    
+    <header class="header">
+      <div class="icono-menu">
+        <img
+          src="https://cdn.discordapp.com/attachments/759170694910705677/1120484064953110648/open-menu.png"
+          id="icono-menu"
+          alt="Logo de la marca"
+        />
+      </div>
+      <nav>
+        <ul class="nav-links"></ul>
+      </nav>
+      <div class="cont-menu active" id="menu">
+        <ul>
+          <li><a href="{% url 'smartparking:logout' %}">Cerrar sesión</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Cuerpo -->
+    <div class="container">
+      <!-- Barra lateral -->
+      <aside class="sidebar">
+        <h2>Espacios</h2>
+        <ul>
+          {% for estacionamiento in estacionamientos %}
+          <li>
+            <a href="{% url 'smartparking:estados_estacionamiento' estacionamiento.id %}" style="color: inherit; text-decoration: none; font-weight: bold;">{{ estacionamiento.lugar }}</a><br>
+            {% if estacionamiento.estado %}
+                Disponible
+            {% else %}
+                Ocupado
+            {% endif %}
+          </li>
+          {% endfor %}
+       </ul>
+      </aside>
+
+      <!-- Contenido principal -->
+      <div class="content">
+        <div class="image-container">
+          <img
+            src="https://cdn.discordapp.com/attachments/759170694910705677/1120530726702551071/fondo.png"
+            alt="autoport"
+          />
+          <div class="rectangle-container">
+            {% for estacionamiento in estacionamientos %}
+              <div class="rectangle {% if estacionamiento.estado %}green{% endif %}"></div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flotador -->
+
+    <!-- Script para mostrar la hora actual y cambiar el color del rectángulo -->
+    <script>
+     
+      function updateCurrentTime() {
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+
+        // Formato de 2 dígitos para horas, minutos y segundos
+        hours = ("0" + hours).slice(-2);
+        minutes = ("0" + minutes).slice(-2);
+        seconds = ("0" + seconds).slice(-2);
+
+        var timeString = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("current-time").textContent = timeString;
+      }
+
+      const iconoMenu = document.querySelector("#icono-menu");
+      const menu = document.querySelector("#menu");
+
+      iconoMenu.addEventListener("click", (e) => {
+        // Alternamos estilos para el menú
+        menu.classList.toggle("active");
+        document.body.classList.toggle("opacity");
+      });
+      function actualizarPagina() {
+        location.reload(); // Recarga la página actual
+        }
+    setInterval(actualizarPagina, 5000);
+         
+    </script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Contactanos</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/home" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>SmartParking</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/home" class="active">Inicio</a></li>
+          <li><a href="/nosotros">Acerca de Nosotros</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/contactanos">Contactanos</a></li>
+          <li><a class="get-a-quote" href="/login">Login</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('{% static 'assets/img/fondo.jpg'%}');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Ubícanos</h2>
+              <p>¡Nos encantaría escucharte! Si tienes alguna pregunta, sugerencia o consulta, no dudes en ponerte en contacto con nosotros. Nuestro equipo estará encantado de ayudarte en lo que necesites. También puedes seguir explorando nuestro sitio para obtener más información sobre nuestros servicios y conocer más sobre quiénes somos. ¡Esperamos poder atenderte pronto!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="/home2">Inicio</a></li>
+            <li>Contactanos</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+    
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div>
+          <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.914467785076!2d-71.52451582132328!3d-16.4291697984109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b23fcffffff%3A0xf3a2f908ae973204!2sTecsup!5e0!3m2!1ses-419!2spe!4v1688328390917!5m2!1ses-419!2spe" frameborder="0" allowfullscreen></iframe>
+          
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4 mt-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-item d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              <div style="margin-left: 10px;">
+                <h4>Localizacion:</h4>
+                <p>HFCJ+84H, José Luis Bustamante y Rivero 04009</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg>
+              <div style="margin-left: 10px;">
+                <h4>Email:</h4>
+                <p>Smartparking@Gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+              <div style="margin-left: 10px;">
+                <h4>Call:</h4>
+                <p>+51 987 048 707</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="/home2.html" class="logo d-flex align-items-center">
+            <span>SmartParking</span>
+          </a>
+          <p>Nuestras Redes</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg></a>
+            <a href="#" class="github"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg></i></a>
+            
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Enlaces Frecuentes</h4>
+          <ul>
+            <li><a href="/home">Inicio</a></li>
+            <li><a href="/nosotros">Acerca de Nosotros</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/contactanos">Contactanos</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Nuestros Servicios</h4>
+          <ul>
+            <li><a href="#">Web</a></li>
+            <li><a href="/login">Web Movil</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contactanos</h4>
+          <p>
+            José Luis Bustamante y Rivero 04009 <br>
+            Arequipa, HFCJ+84H<br>
+            Peru <br><br>
+            <strong>Phone:</strong> +51 987 048 707<br>
+            <strong>Email:</strong> Smartparking@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>SmartParking</span></strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Creado por <a href="/nosotros">Tecsup</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+  </svg></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

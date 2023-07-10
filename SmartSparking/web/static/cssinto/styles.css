@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+/* Barra lateral */
+aside {
+  flex: 0 0 25%;
+  padding-right: 20px;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* Contenido principal */
+.col-lg-9 {
+  flex: 0 0 75%;
+}
+
+.content {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.image-container {
+  position: relative;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.rectangle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.rectangle {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  display: inline-block;
+}
+
+.green {
+  background-color: green;
+}
+
+/* Header */
+.header {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.icono-menu {
+  display: inline-block;
+}
+
+#icono-menu {
+  max-width: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Flotador */
+
+/* Otros estilos */
+.opacity {
+  opacity: 0.5;
+}
